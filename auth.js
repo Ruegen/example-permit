@@ -7,7 +7,7 @@ const jwtExpiresIn = '7 days'
 
 const login = (req, res, next) => {
     const permit = new Basic({
-        query: ['username', 'password']
+        query: ['email', 'password']
     })
     const credentials = permit.check(req)
     

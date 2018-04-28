@@ -2,7 +2,7 @@
 
 ### permitted
 GET {{server}}/permitted
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1MjQ4OTI1NjksImV4cCI6MTUyNTQ5NzM2OX0.wcI7W1Clp9XWFz15FjBSC44dmdeixTuOxgjKIMqRpyY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1MjQ4OTMzMTMsImV4cCI6MTUyNTQ5ODExM30.CAKXAgtiIEfIfVCRkKYGIRv4Kom61qOQbWuFkS4kVRo
 
 ### not permitted
 GET {{server}}/permitted
@@ -10,11 +10,11 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpY
  
 ### Auth login
 POST {{server}}/login
-?username=ruegen&password=elephant
+?email=ruegen@example.com&password=elephant
 
 ### not auth login no password
 POST {{server}}/login
 
 ### not auth login wrong password
 POST {{server}}/login
-?username=ruegen&password=mac
+?email=ruegen@example.com&password=mac
